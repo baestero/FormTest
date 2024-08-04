@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(134, 53, 227);
+}
+
+.group {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  border: none;
+  gap: 10px;
+}
+
+.group input {
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+.privacidade {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.privacidade a {
+  text-decoration: none;
+  color: rgb(134, 53, 227);
+}
+
+.phone-label-span {
+  visibility: none;
+}
+
+.field {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#product {
+  padding: 5px;
+  border-radius: 8px;
+  color: grey;
+}
+
+.container-2 label {
+  margin-right: 10px;
+}
+
+.container-3,
+.container-4,
+.container-2 {
+  gap: 5px;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+.container-3 label {
+  margin-right: 10px;
+}
+
+.container-3 input {
+  margin-right: 5px;
+}
+
+.container-4 input {
+  margin-top: 10px;
+}
+
+.container-5 {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: rgb(134, 53, 227);
+  border: 1px solid grey;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+#open-text-area {
+  width: 200px;
+  height: 80px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.success {
+  display: none;
+  background-color: rgb(134, 53, 227);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.error {
+  display: none;
+  background-color: red;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+}
+
+.success,
+.error {
+  text-align: center;
+}
+
+.politica-title {
+  text-align: center;
+  color: rgb(134, 53, 227);
+}
+
+.privacy {
+  text-align: center;
+  background: whitesmoke;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+@media (max-width: 411px) {
+  #white-background {
+    border-radius: 0;
+  }
+
+  .error,
+  .success {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .field input[type="text"],
+  .field input[type="email"],
+  .field input[type="number"] {
+    width: 330px;
+  }
+}

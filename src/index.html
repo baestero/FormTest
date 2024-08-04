@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Form Test</title>
+</head>
+
+<body>
+  <div class="title">
+    <h1 id="title">Form Test</h1>
+    <p id="subtitle">Forneça o máximo de informações, por favor.</p>
+    <br />
+  </div>
+
+  <span class="success">
+    <strong>Mensagem enviada com sucesso.</strong>
+  </span>
+  <span class="error">
+    <strong>Valide os campos obrigatórios!</strong>
+  </span>
+
+  <div class="flex-container">
+
+    <div class="container" id="white-background">
+      <form>
+
+        <fieldset class="group">
+          <div class="field">
+            <label for="firstName"></label>
+            <input placeholder="Nome (obrigatório)" type="text" name="firstName" id="firstName" required />
+          </div>
+
+          <div class="field">
+            <label for="lastName"></span></label>
+            <input type="text" name="lastName" id="lastName" placeholder="Sobrenome (obrigatório)" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="group">
+          <div class="field">
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="email (obrigatório)" required />
+          </div>
+
+          <div class="field">
+            <label for="phone"><span class="phone-label-span required-mark"></span></label>
+            <input type="number" name="phone" id="phone" placeholder="Telefone" />
+          </div>
+        </fieldset>
+
+
+        <div class="field container-2">
+          <label for="product">Produto</label>
+          <select id="product">
+            <option selected disabled value="">Selecione</option>
+            <option value="blog">Blog</option>
+            <option value="cursos">Cursos</option>
+            <option value="mentoria">Mentoria</option>
+            <option value="youtube">YouTube</option>
+          </select>
+        </div>
+
+        <div id="support-type" class="field container-3">
+          <label>Tipo de atendimento </label>
+          <label>
+            <input type="radio" name="atendimento-tat" value="ajuda" checked />Ajuda
+          </label>
+          <label>
+            <input type="radio" name="atendimento-tat" value="elogio" />Elogio
+          </label>
+          <label>
+            <input type="radio" name="atendimento-tat" value="feedback" />Feedback
+          </label>
+        </div>
+
+        <fieldset class="group">
+          <div id="check" class="container-4">
+            <label>Qual seu meio de contato preferencial? </label>
+            <br />
+            <input type="checkbox" id="email-checkbox" name="email" value="email" />
+            <label for="email">E-mail</label>
+            <input type="checkbox" id="phone-checkbox" name="phone" value="phone" />
+            <label for="phone">Telefone</label>
+          </div>
+        </fieldset>
+
+
+        <div class="field container-5">
+          <br />
+          <label>Como podemos te ajudar? <span class="required-mark"> </span></label>
+          <textarea row="6" id="open-text-area" name="open-text-area" required></textarea>
+        </div>
+
+        <div class="field">
+          <label>Adicione um anexo</label>
+          <input id="file-upload" type="file">
+        </div>
+
+        <div class="btn">
+          <button type="submit" class="button">Enviar</button>
+        </div>
+
+        <div id="privacy" class="privacidade">
+          <a href="privacidade.html" target="_blank">Política de Privacidade</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
